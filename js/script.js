@@ -16,12 +16,23 @@
         for(const task of tasks) {
             htmlString += `
                 <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
-                    ${task.content}
+                  <button class="js-remove">usuń</button> 
+                ${task.content}
                 </li>
             `;
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+
+        const removeButtons = document.querySelectorAll(".js-remove");
+         
+        removeButtons.forEach((removeButton, index) =>{
+            removeButton.addEventListener("click", () => {
+                removeTask(Taskindex);
+            });
+
+
+        });
     };
 
     const addNewTask = (newTaskContent) => {
@@ -29,6 +40,12 @@
             content: newTaskContent,
         });
         render();
+    }
+
+    const removeTask = (Taskindex) => {
+        tasks.splice(Taskindex, 1);
+                render();
+
     }
 
     const onFormSubmit = (event) => {
