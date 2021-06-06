@@ -6,3 +6,15 @@ html {
     box-sizing: inherit;
 }
 
+.body {
+    background-color: #eee;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 20px 10px 10px 10px;
+}

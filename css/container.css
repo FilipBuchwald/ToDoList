@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-auto-columns: minmax(60px, auto);
+    grid-gap: 10px 10px;
+    align-content: center;
+    grid-template-rows: auto;
+    padding: 10px;
+}
+
+.container__item {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.container__header {
+    font-weight: 900;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px 10px;
+
+}
