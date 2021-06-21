@@ -1,0 +1,34 @@
+.list {
+    list-style-type: none;
+}
+
+.list__button {
+    width: 30px;
+    height: 30px;
+    border: none; 
+}
+
+.list__button--done{
+    background-color: green;
+}
+
+.list__button--remove {
+    background-color: red;
+}
+
+.list__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    padding: 10px;
+}
+
+.list__task {
+    word-break: break-word;
+    margin: 0 10px;
+}
+
+.list__task--done {
+    text-decoration: line-through;
+}

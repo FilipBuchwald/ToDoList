@@ -1,7 +1,6 @@
 .form {
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
    align-items: center;
 
 }
@@ -10,14 +9,13 @@
     background: teal;
     color: white;
     flex-grow: 0;
-    width: 120px;
-    height: 30px;
+    padding: 10px;
     font-size: 15px;
     border: none;
 }
 
 .form__input {
-    padding: 5px;
+    padding: 10px;
     margin: 5px 10px; 
     flex-grow: 1;
     border: 1px solid #ddd;
