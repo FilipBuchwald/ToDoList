@@ -5,15 +5,25 @@
 .list__button {
     width: 30px;
     height: 30px;
-    border: none; 
+    border: none;
 }
 
-.list__button--done{
+.list__button--done {
     background-color: green;
+    color: #eee;
+}
+
+.list__button--done:active{
+    background-color: limegreen;
 }
 
 .list__button--remove {
-    background-color: red;
+    background-color: crimson;
+    color: #eee;
+}
+
+.list__button--remove:active{
+    background-color: rgb(255, 31, 76);
 }
 
 .list__item {
@@ -22,6 +32,7 @@
     border-bottom: 1px solid #ddd;
     align-items: center;
     padding: 10px;
+    font-weight: 400;
 }
 
 .list__task {

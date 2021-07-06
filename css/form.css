@@ -1,27 +1,35 @@
 .form {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
 }
 
 .form__button {
     background: teal;
     color: white;
-    flex-grow: 0;
     padding: 10px;
     font-size: 15px;
     border: none;
+    margin: 5px 10px;
+}
+
+.form__button:active{
+    background: rgb(2, 170, 170);
 }
 
 .form__input {
     padding: 10px;
-    margin: 5px 10px; 
-    flex-grow: 1;
+    margin: 5px 10px;
     border: 1px solid #ddd;
-   
 }
 
 .form__input::placeholder {
     color: rgb(179, 176, 176);
+}
+
+@media(max-width: 767px) {
+    .form {
+          grid-template-columns: 1fr;
+    }
+    
 }
