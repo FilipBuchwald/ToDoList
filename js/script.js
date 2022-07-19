@@ -1,7 +1,9 @@
 {
-    const tasks = [];
+    let tasks = [];
 
-    const render = () => {
+    let hideDoneTask = false;
+
+    const renderTask = () => {
         let htmlString = ""
 
         for (const task of tasks) {
@@ -19,7 +21,18 @@
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
+
+    const renderButtons = () => {};
+
+    const bindButtonsEvents = () => {};
+
+
+    const render = () => {
+        renderTask();
+        renderButtons();
         buttonEvent();
+        bindButtonsEvents();
     };
 
     const buttonEvent = () => {
@@ -40,22 +53,31 @@
     }
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            {content: newTaskContent},
+        ];
+        
         render();
         resetInput();
         focusInput();
 
-    }
+    };
 
-    const removeTask = (Taskindex) => {
-        tasks.splice(Taskindex, 1);
+    const removeTask = (Taskindex) => { 
+        tasks = [
+            ...tasks.slice(0,Taskindex),
+            ...tasks.slice(Taskindex + 1)
+        ];
         render();
     }
 
     const doneTask = (Taskindex) => {
-        tasks[Taskindex].done = !tasks[Taskindex].done;
+        tasks = [
+            ...tasks.slice(0,Taskindex),
+            {...tasks[Taskindex], done: !tasks[Taskindex].done},
+            ...tasks.slice(Taskindex + 1)
+        ];
         render();
     }
 
