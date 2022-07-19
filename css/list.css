@@ -8,6 +8,7 @@
     width: 30px;
     height: 30px;
     border: none;
+    transition: 1s;
 }
 
 .list__button--done {
@@ -15,8 +16,8 @@
     color: #eee;
 }
 
-.list__button--done:active{
-    background-color: limegreen;
+.list__button--done:hover{
+    background-color: hsl(120, 100%, 35%);
 }
 
 .list__button--remove {
@@ -24,8 +25,8 @@
     color: #eee;
 }
 
-.list__button--remove:active{
-    background-color: rgb(255, 31, 76);
+.list__button--remove:hover{
+    background-color: hsl(348, 83%, 57%);
 }
 
 .list__item {

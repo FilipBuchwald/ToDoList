@@ -11,10 +11,13 @@
     font-size: 15px;
     border: none;
     margin: 5px 10px;
+    transition: 1s;
 }
 
-.form__button:active{
-    background: rgb(2, 170, 170);
+
+.form__button:hover {
+    transform: scale(1.1);
+    background: hsl(180, 100%, 30%);
 }
 
 .form__input {
