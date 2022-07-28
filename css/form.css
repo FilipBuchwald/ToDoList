@@ -20,6 +20,12 @@
     background: hsl(180, 100%, 30%);
 }
 
+@media(max-width: 767px) {
+    .form__button:hover {
+        transform: none;
+    }
+}
+
 .form__input {
     padding: 10px;
     margin: 5px 10px;

@@ -49,3 +49,7 @@
     border: none;
     background-color: transparent;    
 }
+
+.container__button:hover {
+    color: hsl(180, 100%, 35%);
+}
