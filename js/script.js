@@ -41,7 +41,7 @@
         if (tasks.length > 0) {
             htmlButton += `
             <button class="js-button container__button js-hideAllDoneTasks"> 
-            ${hideDoneTask ? "pokaż" : "ukryj"} ukończone 
+            ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone 
             </button>
             <button class="js-button container__button js-completeAllTasks" ${tasks.every(task => task.done) ? "disabled" : ""}> 
             Ukończ wszystkie 
