@@ -21,6 +21,18 @@
     padding: 10px;
     margin: -4px 0px;
 }
+@media(max-width: 767px) {
+    .container__header{
+        grid-template-columns: 1fr;
+    }
+    .container__button {
+          display: flex;
+          flex-basis: 100%;
+          flex-wrap: wrap;
+          justify-content: center;
+    }
+    
+}
 
 .container__heading {
     font-weight: 900;
