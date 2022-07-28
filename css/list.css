@@ -9,6 +9,7 @@
     height: 30px;
     border: none;
     transition: 1s;
+    cursor: pointer;
 }
 
 .list__button--done {
