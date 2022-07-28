@@ -46,3 +46,7 @@
 .list__task--done {
     text-decoration: line-through;
 }
+
+.list__task--hidden {
+    display: none;
+}
