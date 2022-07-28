@@ -14,9 +14,26 @@
 }
 
 .container__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    margin: -4px 0px;
+}
+
+.container__heading {
     font-weight: 900;
     font-size: 18px;
     padding: 5px;
     margin: 5px 10px;
+}
 
+.container__button {
+    color: teal;
+    margin: -4px 0px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;    
 }
