@@ -53,3 +53,7 @@
 .container__button:hover {
     color: hsl(180, 100%, 35%);
 }
+
+.container__button:disabled {
+    color: rgb(205, 205, 205)
+}
